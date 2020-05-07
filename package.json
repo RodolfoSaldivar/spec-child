@@ -2,10 +2,6 @@
   "name": "spec-child",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "12.8.1",
-    "npm": "6.10.2"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -39,9 +35,11 @@
     ]
   },
   "devDependencies": {
-    "webpack-config-single-spa-react": "^1.5.0",
-    "systemjs-webpack-interop": "^2.1.0",
     "single-spa-react": "^2.14.0",
+    "systemjs-webpack-interop": "^2.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-config-single-spa-react": "^1.5.0",
     "webpack-merge": "^4.2.2"
   }
 }
