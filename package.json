@@ -11,6 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "single-spa-react": "^2.14.0",
+    "systemjs-webpack-interop": "^2.1.0",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {
@@ -34,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack-config-single-spa-react": "^1.5.0",
+    "webpack-merge": "^4.2.2"
   }
 }
