@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 // import { setPublicPath } from "systemjs-webpack-interop";
-import Index from './index';
+import App from './App';
 import 'typeface-roboto';
 
 const reactLifecycles = singleSpaReact({
 	React,
 	ReactDOM,
-	rootComponent: Index,
+	rootComponent: App,
 	errorBoundary(err, info, props) {
 		return <div className="mt-16">Error</div>;
 	},
