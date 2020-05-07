@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
-import { setPublicPath } from "systemjs-webpack-interop";
+// import { setPublicPath } from "systemjs-webpack-interop";
 import App from './App';
 import 'typeface-roboto';
 
@@ -18,4 +18,4 @@ export const bootstrap = reactLifecycles.bootstrap;
 export const mount = reactLifecycles.mount;
 export const unmount = reactLifecycles.unmount;
 
-setPublicPath("@pbpd/spec-child");
+// setPublicPath("@pbpd/spec-child");
