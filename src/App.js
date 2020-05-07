@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 //================================================
 
@@ -9,12 +10,22 @@ const style = {
 
 //================================================
 
-function App() {
+const App = (props) => {
+  const { specGreeting } = props;
+
   return (
     <div style={style}>
       This is the spec-child
+      <br /><br />
+      Greeting: {specGreeting}
     </div>
-  );
+  )
 }
 
-export default App;
+//================================================
+
+const mapStateToProps = ({ specReducer }) => specReducer;
+
+export default connect(
+  mapStateToProps
+)(App);

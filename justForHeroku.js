@@ -12,4 +12,4 @@ app.use(function(req, res, next) {
 app.use(express.static(path.join(__dirname, 'build')));
 
 const port = process.env.PORT || '5000';
-app.listen(port, () => console.log(`PORT: ${port}`));
+app.listen(port, () => console.log(`Listening to PORT: ${port}`));
